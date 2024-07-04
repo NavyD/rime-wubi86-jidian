@@ -8,18 +8,20 @@ customization:
   rime_version: "0.16.0"
   config_version: "0.22"
 
+# 配置覆写和定制：https://www.mintimate.cc/zh/guide/configurationOverride.html
 patch:
   show_notifications_time: 200            # 部署通知、中英切换标识  显示时长 ms
   style:
     inline_preedit: true
     color_scheme: MacRoseo                 # 匹配正文的颜色方案，对应正文的颜色方案名
+    color_scheme_dark: mint_dark_green     # 选择皮肤，亮色与暗色主题 跟随系统
     display_tray_icon: false
     horizontal: true                        # 横向排列候选
     font_point: 13                          # 候选词 字号
-    font_face: "Microsoft Yahei"            # 字体 - 候选文字 例子： "Microsoft Yahei:12:15:bold"
-    label_font_face: "Microsoft Yahei"     # string    序号字体 标注
+    font_face: "更纱黑体 SC, Microsoft Yahei"            # 字体 - 候选文字 例子： "Microsoft Yahei:12:15:bold"
+    label_font_face: "更纱黑体 SC, Microsoft Yahei"     # string    序号字体 标注
     label_font_point: 12                   # number    序号字体 大小
-    comment_font_face: "Microsoft Yahei"   # string    注释字体
+    comment_font_face: "更纱黑体 SC, Microsoft Yahei"   # string    注释字体
     comment_font_point: 11                 # number    注释字体 大小
     text_orientation: horizontal                         # horizontal | vertical
     preedit_type: "composition"            #  "composition" | "preview" | "preview_all"
@@ -98,5 +100,26 @@ patch:
       hilited_candidate_back_color: 0x9BAD23
       candidate_text_color: 0x000000
       comment_text_color: 0xBBCC27
+
+    # https://github.com/Mintimate/oh-my-rime/blob/main/weasel.yaml
+    mint_dark_green:
+      name: "碧月青／Mint Dark Green"
+      author: Mintimate <"Mintimate's Blog">
+      translucency: true                      # 磨砂： false | true
+      mutual_exclusive: false                 # 色不叠加： false | true
+      candidate_list_layout: stacked
+      # text_orientation: horizontal
+      color_space: srgb
+      back_color: 0x323232                    # 底色
+      candidate_text_color: 0xE8E8E8          # 文字颜色
+      comment_text_color: 0xBEBEBE            # 注颜色
+      label_color: 0xB0B0B0                   # 序号颜色
+      hilited_candidate_back_color: 0x83C81C  # 选中底色
+      hilited_candidate_text_color: 0xEFEFEF  # 选中文字颜色
+      hilited_comment_text_color: 0xF4FAF8    # 选中注颜色
+      hilited_candidate_label_color: 0xEFEFEF # 选中序号颜色
+      hilited_label_color: 0xEFEFEF           # 选中序号颜色
+      text_color: 0x83C81C                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0xed9564            # 选中拼音颜色 （inline_preedit: false）
 
   style/layout/border_width: 1

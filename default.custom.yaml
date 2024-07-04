@@ -11,18 +11,20 @@ patch:
   schema_list:
     - schema: wubi86_jidian             # 五笔
     - schema: numbers                   # 大写数字
-    - schema: wubi86_jidian_pinyin      # 五笔拼音混输
-    - schema: wubi86_jidian_trad        # 五笔 - 简入繁出
-    - schema: wubi86_jidian_trad_pinyin # 五笔拼音混输 - 简入繁出
-    - schema: pinyin_simp               # 普通拼音
+    # - schema: wubi86_jidian_pinyin      # 五笔拼音混输
+    # - schema: wubi86_jidian_trad        # 五笔 - 简入繁出
+    # - schema: wubi86_jidian_trad_pinyin # 五笔拼音混输 - 简入繁出
+    # - schema: pinyin_simp               # 普通拼音
 
   # Menu
   menu:
     page_size: 5                    # 候选词数量，最多支持 10 个
   switcher:
     hotkeys:        # 弹出菜单的快捷键
-      - "Control+0"
-      - "Shift+Control+0"
+      # 与vscode冲突
+      # - "Control+0"
+      # - "Shift+Control+0"
+      - Shift+Caps_Lock
     abbreviate_options: true
     caption: "【 输入法设置 】"
     option_list_separator: "｜"
