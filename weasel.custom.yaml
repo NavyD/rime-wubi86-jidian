@@ -13,7 +13,7 @@ patch:
   show_notifications_time: 200            # 部署通知、中英切换标识  显示时长 ms
   style:
     inline_preedit: true
-    color_scheme: MacRoseo                 # 匹配正文的颜色方案，对应正文的颜色方案名
+    color_scheme: WhiteAqua                 # 匹配正文的颜色方案，对应正文的颜色方案名
     color_scheme_dark: mint_dark_green     # 选择皮肤，亮色与暗色主题 跟随系统
     display_tray_icon: false
     horizontal: true                        # 横向排列候选
