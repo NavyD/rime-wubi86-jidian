@@ -85,6 +85,11 @@ patch:
       - { when: composing, accept: Alt+v, send: Page_Up }
       - { when: composing, accept: Control+v, send: Page_Down }
 
+      # vim key bindings
+      - when: composing
+        accept: "Control+["
+        send: Escape
+
   punctuator:
     full_shape: # 全角符号
       " ": {commit: "　"}

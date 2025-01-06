@@ -10,6 +10,20 @@ customization:
 
 # 配置覆写和定制：https://www.mintimate.cc/zh/guide/configurationOverride.html
 patch:
+  # 参考[应用设置](https://github.com/rime/weasel/wiki/Weasel-%E5%AE%9A%E5%88%B6%E5%8C%96#%E5%BA%94%E7%94%A8%E8%AE%BE%E7%BD%AE)
+  app_options:
+    neovide.exe:
+      ascii_mode: true
+      vim_mode: true
+    code.exe:
+      ascii_mode: true
+      vim_mode: true
+    conhost.exe:
+      ascii_mode: true
+    cmd.exe:
+      ascii_mode: true
+    WindowsTerminal.exe:
+      ascii_mode: true
   show_notifications_time: 200            # 部署通知、中英切换标识  显示时长 ms
   style:
     inline_preedit: true
