@@ -1,0 +1,16 @@
+# NOTE: 重新部署后还需要点击切换主题才能生效
+# 参考[trime.custom.yaml失效 #902](https://github.com/osfans/trime/issues/902#issuemment-1372049321)
+patch:
+  # 对BS(BackSpace)按键 左滑 清空候选词
+  "preset_keyboards/default/keys/@28/+":
+    swipe_left: Escape
+    # label: esc
+    # long_click: Escape
+  "style/color_scheme_dark": dark
+
+  # NOTE: 在`preset_keys`中不能配置按键功能如click,width，其只能用于定义按键
+  # "preset_keys/BS/+":
+  #   label: "bsb"
+  #   swipe_left: Escape
+  #   repeatable: false
+
