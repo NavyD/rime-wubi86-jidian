@@ -6,7 +6,8 @@ patch:
     swipe_left: Escape
     # label: esc
     # long_click: Escape
-  "style/color_scheme_dark": dark
+  # 参考https://github.com/osfans/trime/wiki/trime.yaml%-E8%%A9B3%E8%%A7%A3#%E98%58D%%E889%B2%E%696%B9%%E6A1%88
+  "preset_color_schemes/default/dark_scheme": dark
 
   # NOTE: 在`preset_keys`中不能配置按键功能如click,width，其只能用于定义按键
   # "preset_keys/BS/+":
